@@ -28,8 +28,9 @@ jobs:
         python app.py &
         sleep 5
         curl http://localhost:5000
-
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_PROJECT_KEY: akhil-mudili_secure-devops-backend
+        SONAR_ORGANIZATION: akhil-mudili
