@@ -33,5 +33,3 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_PROJECT_KEY: akhil-mudili_secure-devops-backend
-          SONAR_ORGANIZATION: akhil-mudili
